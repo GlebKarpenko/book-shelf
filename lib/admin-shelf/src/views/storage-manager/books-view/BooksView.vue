@@ -28,14 +28,14 @@ const handleEdit = (bookId: string) => emit('edit', bookId);
 const handleRemove = (bookId: string) => emit('remove', bookId);
 
 const sortOptions: SortOption[] = [
-  { sortBy: 'title',         order: 'asc',  label: 'Title A-Z'      },
-  { sortBy: 'title',         order: 'desc', label: 'Title Z-A'      },
-  { sortBy: 'author',        order: 'asc',  label: 'Author A-Z'     },
-  { sortBy: 'author',        order: 'desc', label: 'Author Z-A'     },
-  { sortBy: 'rating',        order: 'asc',  label: 'Lowest-Highest' },
-  { sortBy: 'rating',        order: 'desc', label: 'Highest-Lowest' },
-  { sortBy: 'publishedYear', order: 'desc', label: 'Newest First'   },
-  { sortBy: 'publishedYear', order: 'asc',  label: 'Oldest First'   },
+  { sortBy: 'title',         order: 'asc',  label: 'Title A-Z'                 },
+  { sortBy: 'title',         order: 'desc', label: 'Title Z-A'                 },
+  { sortBy: 'author',        order: 'asc',  label: 'Author A-Z'                },
+  { sortBy: 'author',        order: 'desc', label: 'Author Z-A'                },
+  { sortBy: 'rating',        order: 'asc',  label: 'Lowest-Highest Popularity' },
+  { sortBy: 'rating',        order: 'desc', label: 'Highest-Lowest Popularity' },
+  { sortBy: 'publishedYear', order: 'desc', label: 'Newest First'              },
+  { sortBy: 'publishedYear', order: 'asc',  label: 'Oldest First'              },
 ];
 
 const isSearchRelevant = (query: string): boolean => {
